@@ -127,6 +127,7 @@ bool Print::invalidate_state_by_config_options(const ConfigOptionResolver & /* n
         "filament_seam_gap_distance",
         "filament_spool_weight",
         "first_layer_acceleration",
+        "first_layer_travel_acceleration",
         "first_layer_acceleration_over_raft",
         "first_layer_bed_temperature",
         "first_layer_speed_over_raft",
@@ -270,6 +271,7 @@ bool Print::invalidate_state_by_config_options(const ConfigOptionResolver & /* n
             || opt_key == "multimaterial_purging"
             || opt_key == "travel_speed"
             || opt_key == "travel_speed_z"
+            || opt_key == "first_layer_travel_speed"
             || opt_key == "first_layer_speed"
             || opt_key == "z_offset") {
             steps.emplace_back(psWipeTower);
