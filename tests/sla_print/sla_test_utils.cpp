@@ -4,6 +4,7 @@
 #include "libslic3r/SLA/DefaultSupportTree.hpp"
 #include "libslic3r/SLA/BranchingTreeSLA.hpp"
 
+#include <catch2/interfaces/catch_interfaces_capture.hpp>
 #include <iomanip>
 
 void test_support_model_collision(
