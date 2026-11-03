@@ -370,10 +370,10 @@ endif()
 # boost::process was introduced first in version 1.64.0,
 # boost::beast::detail::base64 was introduced first in version 1.66.0
 set(MINIMUM_BOOST_VERSION "1.83.0")
-set(_boost_components "system;filesystem;thread;log;locale;regex;chrono;atomic;date_time;iostreams;nowide")
+set(_boost_components "filesystem;thread;log;locale;regex;chrono;atomic;date_time;iostreams;nowide")
 find_package(Boost ${MINIMUM_BOOST_VERSION} REQUIRED COMPONENTS ${_boost_components})
 
-find_package(Eigen3 3.3.7 REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 add_library(boost_libs INTERFACE)
 add_library(boost_headeronly INTERFACE)
@@ -480,7 +480,10 @@ if (SLIC3R_STATIC AND NOT SLIC3R_STATIC_EXCLUDE_GLEW)
     set(GLEW_VERBOSE ON)
 endif()
 
-find_package(GLEW REQUIRED)
+add_library(glad_gl STATIC ${CMAKE_CURRENT_SOURCE_DIR}/glad/src/gl.c)
+target_include_directories(glad_gl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glad/include)
+add_library(GLAD::GL ALIAS glad_gl)
+add_library(GLEW::GLEW ALIAS glad_gl)
 
 # Find the Cereal serialization library
 find_package(cereal REQUIRED)

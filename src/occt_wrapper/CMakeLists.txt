@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(OCCTWrapper)
 
-if (APPLE)
+if (APPLE OR LINUX)
     # TODO: we need to fix notarization with the separate shared library
     add_library(OCCTWrapper STATIC OCCTWrapper.cpp)
 else ()
@@ -19,35 +19,9 @@ include(GenerateExportHeader)
 
 generate_export_header(OCCTWrapper)
 
-find_package(OpenCASCADE 7.6.1 REQUIRED)
+find_package(OpenCASCADE REQUIRED)
 
-set(OCCT_LIBS
-    TKXDESTEP
-    TKSTEP
-    TKSTEP209
-    TKSTEPAttr
-    TKSTEPBase
-    TKXCAF
-    TKXSBase
-    TKVCAF
-    TKCAF
-    TKLCAF
-    TKCDF
-    TKV3d
-    TKService
-    TKMesh
-    TKBO
-    TKPrim
-    TKHLR
-    TKShHealing
-    TKTopAlgo
-    TKGeomAlgo
-    TKBRep
-    TKGeomBase
-    TKG3d
-    TKG2d
-    TKMath
-    TKernel
+set(OCCT_LIBS TKDESTEP
 )
 
 slic3r_remap_configs("${OCCT_LIBS}" RelWithDebInfo Release)
@@ -59,5 +33,6 @@ target_link_libraries(OCCTWrapper libslic3r admesh)
 
 include(GNUInstallDirs)
 
-install(TARGETS OCCTWrapper DESTINATION "${CMAKE_INSTALL_BINDIR}")
-
+if (NOT LINUX)
+    install(TARGETS OCCTWrapper DESTINATION "${CMAKE_INSTALL_BINDIR}")
+endif ()

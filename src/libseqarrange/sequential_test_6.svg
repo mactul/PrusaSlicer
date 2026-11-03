@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="2000" width="2000" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <marker id="endArrow" markerHeight="8" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="1" refY="5" viewBox="0 0 10 10">
+      <polyline fill="darkblue" points="0,0 10,5 0,10 1,5" />
+   </marker>
+<rect fill='white' stroke='none' x='0' y='0' width='2000.000000' height='2000.000000'/>
+   <path d="M 88.0058 120 118.006 120 148.006 170 108.006 190 68.0058 170 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 40 90 90 140 40 190 -10 140 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M -12.4964 -20 177.504 -20 177.504 86 92.5036 140 -12.4964 60 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 125 80.3406 190 80.3406 190 145.341 125 145.341 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 246 23.3067 276 23.3067 306 73.3067 266 93.3067 226 73.3067 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 256 83.3267 306 133.327 256 183.327 206 133.327 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 126 156 316 156 316 262 231 316 126 236 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 173.504 -5 238.504 -5 238.504 60 173.504 60 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 19.9868 180.661 49.9868 180.661 79.9868 230.661 39.9868 250.661 -0.01323 230.661 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 315.183 44.1368 365.183 94.1368 315.183 144.137 265.183 94.1368 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M -20 228 170 228 170 334 85 388 -20 308 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 311.661 190.628 376.661 190.628 376.661 255.628 311.661 255.628 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 357.39 130.126 387.39 130.126 417.39 180.126 377.39 200.126 337.39 180.126 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 370.898 9.83898 420.898 59.839 370.898 109.839 320.898 59.839 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 246 273.771 436 273.771 436 379.771 351 433.771 246 353.771 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 207.045 361 272.045 361 272.045 426 207.045 426 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 454 89.1258 484 89.1258 514 139.126 474 159.126 434 139.126 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 458.95 139.126 508.95 189.126 458.95 239.126 408.95 189.126 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M -20 364 170 364 170 470 85 524 -20 444 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 432 305 497 305 497 370 432 370 z" style="fill: lightgrey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 98.0058 130 118.006 130 138.006 160 108.006 180 78.0058 160 z" style="fill: green; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 40 100 80 140 40 180 0 140 z" style="fill: blue; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 7.50363 0 157.504 10 157.504 50 82.5036 120 7.50363 50 z" style="fill: red; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 130 85.3406 180 85.3406 180 135.341 130 135.341 z" style="fill: grey; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 256 33.3067 276 33.3067 296 63.3067 266 83.3067 236 63.3067 z" style="fill: cyan; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 256 93.3267 296 133.327 256 173.327 216 133.327 z" style="fill: magenta; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 146 176 296 186 296 226 221 296 146 226 z" style="fill: yellow; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 178.504 0 228.504 0 228.504 50 178.504 50 z" style="fill: black; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 29.9868 190.661 49.9868 190.661 69.9868 220.661 39.9868 240.661 9.98677 220.661 z" style="fill: indigo; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 315.183 54.1368 355.183 94.1368 315.183 134.137 275.183 94.1368 z" style="fill: olive; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 0 248 150 258 150 298 75 368 0 298 z" style="fill: aqua; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 316.661 195.628 366.661 195.628 366.661 245.628 316.661 245.628 z" style="fill: violet; stroke: black; stroke-width: 0.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 367.39 140.126 387.39 140.126 407.39 170.126 377.39 190.126 347.39 170.126 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 370.898 19.839 410.898 59.839 370.898 99.839 330.898 59.839 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 266 293.771 416 303.771 416 343.771 341 413.771 266 343.771 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 212.045 366 262.045 366 262.045 416 212.045 416 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 464 99.1258 484 99.1258 504 129.126 474 149.126 444 129.126 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 458.95 149.126 498.95 189.126 458.95 229.126 418.95 189.126 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 0 384 150 394 150 434 75 504 0 434 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 437 310 487 310 487 360 437 360 z" style="fill: none; stroke: black; stroke-width: 2.000000; fill-type: evenodd"  fill-opacity="1.000000" />
+</svg>

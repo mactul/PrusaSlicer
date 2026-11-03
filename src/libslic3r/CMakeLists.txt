@@ -622,6 +622,7 @@ target_include_directories(libslic3r PUBLIC ${EXPAT_INCLUDE_DIRS})
 
 find_package(JPEG REQUIRED)
 find_package(nlohmann_json REQUIRED)
+find_package(NanoSVG REQUIRED)
 
 target_link_libraries(libslic3r PRIVATE
     sla_time_estimate
@@ -639,6 +640,7 @@ target_link_libraries(libslic3r PRIVATE
     PNG::PNG
     ZLIB::ZLIB
 	JPEG::JPEG
+    NanoSVG::nanosvg
     qoi
     fastfloat
     int128
@@ -660,7 +662,7 @@ target_link_libraries(libslic3r PUBLIC
     prusa_fdm_mixer
 )
 
-if (APPLE)
+if (APPLE OR LINUX)
     # TODO: we need to fix notarization with the separate shared library
     target_link_libraries(libslic3r PUBLIC OCCTWrapper)
 endif ()

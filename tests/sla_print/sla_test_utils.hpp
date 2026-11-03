@@ -2,6 +2,7 @@
 #define SLA_TEST_UTILS_HPP
 
 #include <catch2/catch_test_macros.hpp>
+#include <catch2/interfaces/catch_interfaces_capture.hpp>
 #include <catch2/catch_approx.hpp>
 #include <test_utils.hpp>
 

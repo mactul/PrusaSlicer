@@ -76,7 +76,7 @@ Vec2d get_intersection(const Vec2d &               point,
     return point + dir * (*t);
 }
 
-Vec3d calc_hit_point(const igl::Hit &          h,
+Vec3d calc_hit_point(const igl::Hit<float> &          h,
                      const Vec3i &             triangle,
                      const std::vector<Vec3f> &vertices)
 {
@@ -89,7 +89,7 @@ Vec3d calc_hit_point(const igl::Hit &          h,
     return v0 * c0 + v1 * c1 + v2 * c2;
 }
 
-Vec3d calc_hit_point(const igl::Hit &h, indexed_triangle_set &its)
+Vec3d calc_hit_point(const igl::Hit<float> &h, indexed_triangle_set &its)
 {
     return calc_hit_point(h, its.indices[h.id], its.vertices);
 }
@@ -376,7 +376,7 @@ TEST_CASE("Test hit point", "[AABBTreeIndirect]")
 
     Vec3d    ray_point(8, 1, 0);
     Vec3d    ray_dir(0, 0, 1);
-    igl::Hit hit;
+    igl::Hit<float> hit;
     AABBTreeIndirect::intersect_ray_first_hit(its.vertices, its.indices, tree,
                                               ray_point, ray_dir, hit);
     Vec3d hp = Private::calc_hit_point(hit, its);
@@ -906,7 +906,7 @@ TEST_CASE("Emboss extrude cut", "[Emboss-Cut]")
     // identify glyph for intersected vertex
     std::string vert_shape_map_name = "v:glyph_id";
     MyMesh cgal_object = MeshBoolean::cgal2::to_cgal(cube, face_map_name);
-    auto face_map = cgal_object.property_map<MyMesh::Face_index, int32_t>(face_map_name).first;
+    auto face_map = cgal_object.property_map<MyMesh::Face_index, int32_t>(face_map_name).value();
     auto vert_shape_map = cgal_object.add_property_map<MyMesh::Vertex_index, IntersectingElemnt>(vert_shape_map_name).first;
 
     std::string edge_shape_map_name = "e:glyph_id";
@@ -915,8 +915,8 @@ TEST_CASE("Emboss extrude cut", "[Emboss-Cut]")
 
     MyMesh cgal_shape = MeshBoolean::cgal2::to_cgal(shape, projection, 0, edge_shape_map_name, face_shape_map_name, glyph_contours);    
 
-    auto edge_shape_map = cgal_shape.property_map<MyMesh::Edge_index, IntersectingElemnt>(edge_shape_map_name).first;
-    auto face_shape_map = cgal_shape.property_map<MyMesh::Face_index, IntersectingElemnt>(face_shape_map_name).first;
+    auto edge_shape_map = cgal_shape.property_map<MyMesh::Edge_index, IntersectingElemnt>(edge_shape_map_name).value();
+    auto face_shape_map = cgal_shape.property_map<MyMesh::Face_index, IntersectingElemnt>(face_shape_map_name).value();
 
     // bool map for affected edge
     using d_prop_bool = CGAL::dynamic_edge_property_t<bool>;
